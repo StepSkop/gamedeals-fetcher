@@ -6,23 +6,7 @@ setInterval(() => {
 
         console.log('Checked')
         console.log(alreadyKnown)
-        // var currentdate = new Date(); 
-        // var datetime = "Last Sync: " + currentdate.getDate() + "/"
-        //         + (currentdate.getMonth()+1)  + "/" 
-        //         + currentdate.getFullYear() + " "  
-        //         + currentdate.getHours() + ":"  
-        //         + currentdate.getMinutes() + ":" 
-        //         + currentdate.getSeconds();
-        // console.log(datetime)
-        // if ((currentdate.getMonth()+1) == '6' && currentdate.getDate() == '17' && currentdate.getHours() == '0' && currentdate.getMinutes() == '45' && currentdate.getSeconds() >= '10' && currentdate.getSeconds() <= '11') {
-        //     console.log('now')
-            
-        // }
-
-
-
-
-
+    
         var newKnown = []
             for (let index = 0; index < alreadyKnown.length; index++) {
                 const knownId = alreadyKnown[index]
@@ -44,7 +28,7 @@ setInterval(() => {
                 return
             }
             //##########################################################
-            
+
             console.log(element.title)
             var withouTime = element.end_date.substr(0,element.end_date.indexOf(' '))
             function convertDigitIn(str){
